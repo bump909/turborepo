@@ -53,7 +53,7 @@ export default function RootLayout({
               <footer>
                 <div className="text-white bg-blue-950 xl:bg-gradient-radial from-blue-150 to-blue-950">
                   <div className="p-6 max-w-7xl px-4 mx-auto">
-                    <address className="not-italic">10 Linkstor Road</address>
+                    <address className="not-italic">Payments by Stripe</address>
                   </div>
                 </div>
                 <div className="w-full bg-black mt-auto">
