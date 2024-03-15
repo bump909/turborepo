@@ -9,9 +9,9 @@ async function AppBar() {
   return (
     <div className="flex min-h-12 w-full justify-between gap-2 bg-gradient-to-b from-slate-800 to-slate-600 p-2 text-slate-50">
       <div className="mx-auto flex w-full max-w-7xl items-center gap-x-4 px-4">
-        <Link href={'/clientPage'}>Client Page</Link>
+        {/* <Link href={'/clientPage'}>Client Page</Link>
         <Link href={'/serverPage'}>Server Page</Link>
-        <Link href={'/middlewareProtected'}>Middleware Protected Page</Link>
+        <Link href={'/middlewareProtected'}>Middleware Protected Page</Link> */}
         <div className="ml-auto flex items-center gap-x-2">
           <ModeToggle />
           <ToastExample />

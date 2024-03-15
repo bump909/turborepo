@@ -52,9 +52,7 @@ export function CarouselPlugin({ data }: CardProps): JSX.Element {
                     <span className="text-4xl font-semibold">{card.title}</span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p>{card.description}</p>
-                </CardContent>
+                <CardContent>{card.description}</CardContent>
               </Card>
             </div>
           </CarouselItem>
