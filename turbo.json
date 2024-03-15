@@ -1,10 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
+  "globalDependencies": [
+    "**/.env.*local"
+  ],
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
     "lint": {},
     "type-check": {},
@@ -15,5 +23,20 @@
     "clean": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": [
+    "NODE_ENV",
+    "NEXT_PUBLIC_APP_STAGE",
+    "SUPERTOKENS_CONNECTION_URI",
+    "SUPERTOKENS_API_KEY",
+    "DEBUG",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
+    "GITHUB_CLIENT_ID",
+    "GITHUB_CLIENT_SECRET",
+    "APPLE_CLIENT_SECRET_PRIVATE_KEY",
+    "APPLE_CLIENT_SECRET_KEY_ID",
+    "APPLE_TEAM_ID",
+    "APPLE_CLIENT_ID"
+  ]
 }
