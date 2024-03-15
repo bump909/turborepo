@@ -25,7 +25,7 @@ function Item(): JSX.Element {
     changeQuantity(item.quantity - 1)
   }
 
-  const onInputChange = e => {
+  const onInputChange = (e: any) => {
     changeQuantity(parseInt(e.target.value))
   }
 
