@@ -1,6 +1,6 @@
 'use client'
 
-import { ProfileForm, Tabs, TabsContent, TabsList, TabsTrigger } from '@repo/ui'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@repo/ui'
 import { CarouselPlugin } from '@/components/carousel'
 import { data as mixing } from '@/data/mixing'
 import { data as deck } from '@/data/deck'
@@ -18,9 +18,6 @@ export default function Home(): JSX.Element {
           your audio productions and compositions. While some elements may overlap with broader creative concepts, this
           specific collection is an update for contemporary productions.
         </h3>
-        <Modal title="Sign In">
-          <ProfileForm />
-        </Modal>
 
         <Tabs className="mx-auto w-full max-w-2xl p-4" defaultValue="tab1">
           <TabsList>

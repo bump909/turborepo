@@ -84,6 +84,9 @@ importers:
       '@repo/ui':
         specifier: 0.0.0
         version: link:../../packages/ui
+      '@vercel/analytics':
+        specifier: ^1.2.2
+        version: 1.2.2(next@14.0.4)(react@18.2.0)
       embla-carousel-autoplay:
         specifier: ^8.0.0
         version: 8.0.0(embla-carousel@8.0.0)
@@ -2176,6 +2179,22 @@ packages:
 
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+
+  /@vercel/analytics@1.2.2(next@14.0.4)(react@18.2.0):
+    resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
+    peerDependencies:
+      next: '>= 13'
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      next:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      next: 14.0.4(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      server-only: 0.0.1
+    dev: false
 
   /@vercel/style-guide@5.1.0(eslint@8.56.0)(prettier@3.1.1)(typescript@5.3.3):
     resolution: {integrity: sha512-L9lWYePIycm7vIOjDLj+mmMdmmPkW3/brHjgq+nJdvMOrL7Hdk/19w8X583HYSk0vWsq494o5Qkh6x5+uW7ljg==}
@@ -5115,6 +5134,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       lru-cache: 6.0.0
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
 
   /set-function-length@1.1.1:
     resolution: {integrity: sha512-VoaqjbBJKiWtg4yRcKBQ7g7wnGnLV3M8oLvVWwOk2PdYY6PEFegR1vezXR0tw6fZGF9csVakIRjrJiy2veSBFQ==}

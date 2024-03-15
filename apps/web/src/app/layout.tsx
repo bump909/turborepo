@@ -7,6 +7,7 @@ import { Toaster } from '@repo/ui'
 import { ThemeProvider } from '@/components/theme-provider'
 import AppBar from '@/components/app-bar'
 import Providers from './providers'
+import { Analytics } from '@vercel/analytics/react'
 
 export const fontSans = FontSans({
   subsets: ['latin'],
@@ -88,6 +89,7 @@ export default function RootLayout({
             </div>
           </ThemeProvider>
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
