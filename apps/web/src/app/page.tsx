@@ -11,7 +11,7 @@ import Modal from '@/components/modal'
 export default function Home(): JSX.Element {
   const guest = true
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-between">
+    <div className="flex w-full flex-col items-center justify-between">
       <div className="prose mx-auto flex w-full max-w-7xl flex-col items-center justify-between space-y-8 p-4">
         <H1>Sonic Strategies</H1>
         <h3>
@@ -22,7 +22,7 @@ export default function Home(): JSX.Element {
           specific collection is an update for contemporary productions.
         </h3>
 
-        <Tabs className="mx-auto w-full max-w-7xl py-4 md:px-6" defaultValue="tab1">
+        <Tabs className="mx-auto w-full max-w-3xl py-4 md:px-6" defaultValue="tab1">
           <TabsList className="flex-col md:flex-row max-md:space-y-1">
             <TabsTrigger value="tab1">{deck.name}</TabsTrigger>
             <TabsTrigger value="tab2">{mixing.name}</TabsTrigger>

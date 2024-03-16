@@ -33,7 +33,7 @@ export function CarouselPlugin({ data }: CardProps): JSX.Element {
 
   return (
     <Carousel
-      className="mx-auto w-full dark:text-white"
+      className="mx-auto w-full max-w-3xl dark:text-slate-50"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
       opts={{
@@ -46,20 +46,20 @@ export function CarouselPlugin({ data }: CardProps): JSX.Element {
         {data.map(card => (
           <CarouselItem key={card.id}>
             <div className="p-1">
-              <Card className="prose flex aspect-square flex-col items-center justify-center p-6">
-                <CardHeader>
+              <Card className="prose flex flex-col items-center justify-center p-4">
+                <CardHeader className="px-2 py-4">
                   <CardTitle>
                     <span className="text-4xl font-semibold">{card.title}</span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent>{card.description}</CardContent>
+                <CardContent className="min-h-40 p-4 text-xl">{card.description}</CardContent>
               </Card>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="hidden md:block" />
-      <CarouselNext className="hidden md:block" />
+      <CarouselPrevious className="max-md:hidden" />
+      <CarouselNext className="max-md:hidden" />
     </Carousel>
   )
 }
