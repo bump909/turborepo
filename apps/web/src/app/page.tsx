@@ -1,6 +1,6 @@
 'use client'
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@repo/ui'
+import { Tabs, TabsContent, TabsList, TabsTrigger, H1 } from '@repo/ui'
 import { CarouselPlugin } from '@/components/carousel'
 import { data as mixing } from '@/data/mixing'
 import { data as deck } from '@/data/deck'
@@ -12,6 +12,7 @@ export default function Home(): JSX.Element {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between">
       <div className="prose mx-auto flex w-full max-w-7xl flex-col items-center justify-between space-y-8 p-4">
+        <H1>Sonic Strategies</H1>
         <h3>
           The Sonic Strategies provided here are inspired by Brian Enos Oblique Strategies, a set of cards designed to
           break creative deadlock by encouraging lateral thinking. While the specific strategies listed here are not
