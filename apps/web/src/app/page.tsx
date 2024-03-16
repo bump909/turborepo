@@ -23,7 +23,7 @@ export default function Home(): JSX.Element {
         </h3>
 
         <Tabs className="mx-auto w-full max-w-3xl py-4 md:px-6" defaultValue="tab1">
-          <TabsList className="flex-col md:flex-row max-md:space-y-1">
+          <TabsList className="">
             <TabsTrigger value="tab1">{deck.name}</TabsTrigger>
             <TabsTrigger value="tab2">{mixing.name}</TabsTrigger>
             <TabsTrigger value="tab3">{mastering.name}</TabsTrigger>
