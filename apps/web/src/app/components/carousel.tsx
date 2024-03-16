@@ -29,7 +29,7 @@ interface CardProps {
 }
 
 export function CarouselPlugin({ data }: CardProps): JSX.Element {
-  const plugin = React.useRef(Autoplay({ delay: 2000, stopOnInteraction: true, reset: true }))
+  const plugin = React.useRef(Autoplay({ delay: 8000, stopOnInteraction: true, reset: true }))
 
   return (
     <Carousel
@@ -58,8 +58,8 @@ export function CarouselPlugin({ data }: CardProps): JSX.Element {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden md:block" />
+      <CarouselNext className="hidden md:block" />
     </Carousel>
   )
 }

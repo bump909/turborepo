@@ -30,7 +30,7 @@ export default function RootLayout({
 
       <body
         className={cn(
-          'min-h-screen bg-background dark:bg-slate-800 font-sans antialiased text-gray-600 dark:text-gray-50 leading-normal tracking-normal',
+          'min-h-screen dark:bg-slate-800 font-sans antialiased text-gray-600 dark:text-gray-50 leading-normal tracking-normal',
           fontSans.variable,
         )}
       >
@@ -42,8 +42,8 @@ export default function RootLayout({
                   <AppBar />
                 </div>
               </header>
-              <main className="mb-auto grow container shadow-sm mx-auto" id="root">
-                <div className="container min-h-full mx-auto ">
+              <main className="w-full mb-auto grow shadow-sm mx-auto" id="root">
+                <div className="min-h-full w-full px-4 max-w-7xl mx-auto ">
                   {children}
                   <Toaster />
                 </div>
