@@ -58,8 +58,8 @@ export function CarouselPlugin({ data }: CardProps): JSX.Element {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="max-md:hidden" />
-      <CarouselNext className="max-md:hidden" />
+      <CarouselPrevious />
+      <CarouselNext />
     </Carousel>
   )
 }
